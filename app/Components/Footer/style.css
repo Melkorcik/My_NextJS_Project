@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .line-bg-footer{
+        @apply absolute flex top-[4300px] min-h-[166px] min-w-[1519px] bg-fuchsia-600 justify-around;
+    }
+    .icon-footer{
+        @apply w-[106px] h-[106px];
+    }
+    .link-logo{
+        @apply w-[133px];
+    }
+    .title-footer-icon-company{
+        @apply mt-6 text-white hover:text-gray-600 hover:transition-all hover:cursor-pointer;
+    }
+    .marker-date-footer{
+        @apply mt-6 text-white;
+    }
+    .rules-footer{
+        @apply text-white;
+    }
+}

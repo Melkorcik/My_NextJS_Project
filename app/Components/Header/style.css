@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .header{
+        @apply h-20 w-[100%] bg-fuchsia-600 fixed z-10;
+    }
+    .nav{
+        @apply w-[500] pt-1 pl-6
+    }
+    .list{
+        @apply flex;
+    }
+    .menu-0,.menu-1,.menu-2,.menu-3,.menu-4,.menu-5{
+        @apply text-white hover:text-cyan-600 hover:transition-colors p-6;
+    }
+    .listTwo{
+        @apply bg-fuchsia-600;
+    }
+    .text1-1,.text1-2,.text1-3,.text1-4,.text1-5,.text1-6,.text1-7,
+    .text2-1,.text2-2,.text2-3,.text2-4,.text2-5,.text2-6,.text2-7,.text2-8,.text2-9,
+    .text3-1,.text3-2,.text3-3{
+        @apply w-40 absolute text-slate-100 text-center border-b-2 border-slate-100 p-2 bg-fuchsia-600 hover:bg-fuchsia-400 hover:transition-colors hover:text-slate-900;
+    }
+    .text1-1,.text1-2,.text1-3,.text1-4,.text1-5,.text1-6,.text1-7{
+        @apply left-[123px];
+    }
+    .text2-1,.text2-2,.text2-3,.text2-4,.text2-5,.text2-6,.text2-7,.text2-8,.text2-9{
+        @apply left-[223px];
+    }
+    .text3-1,.text3-2,.text3-3{
+        @apply left-[323px];
+    }
+    .text1-1,.text2-1,.text3-1{
+        @apply top-[69px];
+    }
+    .text1-2{
+        @apply top-[110px];
+    }
+    .text1-3{
+        @apply top-[152px];
+    }
+    .text1-4{
+        @apply top-[193.5px];
+    }
+    .text1-5{
+        @apply top-[259px];
+    }
+    .text1-6{
+        @apply top-[325px];
+    }
+    .text1-7{
+        @apply top-[390px];
+    }
+    .text2-2{
+        @apply top-[110px];
+    }
+    .text2-3{
+        @apply top-[152px];
+    }
+    .text2-4{
+        @apply top-[193.5px];
+    }
+    .text2-5{
+        @apply top-[235.5px];
+    }
+    .text2-6{
+        @apply top-[300.5px];
+    }
+    .text2-7{
+        @apply top-[342.5px];
+    }
+    .text2-8{
+        @apply top-[384px];
+    }
+    .text2-9{
+        @apply top-[449.5px];
+    }
+    .text3-2{
+        @apply top-[134px]
+    }
+    .text3-3{
+        @apply top-[224px]
+    }
+    .btn-h1{
+        @apply absolute top-[15px] right-[350px] text-neutral-50 p-3 hover:cursor-pointer hover:bg-cyan-600 hover:transition-colors;
+    }
+}

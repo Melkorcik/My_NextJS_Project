@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .container-news{
+        @apply absolute top-[3396px] left-[105px] w-[1360px] gap-x-1;
+    }
+    .title-news{
+        @apply absolute left-[55px] text-fuchsia-600 text-center mt-3 text-[40px];
+    }
+    .line-news{
+        @apply flex absolute top-[96px] border-t-4 w-[1400px] h-[12px] ;
+    }
+    .line-select{
+         @apply block h-[2px] bg-fuchsia-600 ml-2;
+    }
+    .title-news-child{
+        @apply text-fuchsia-600;
+    }
+}

@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .container-doctors{
+        @apply absolute top-[300px] grid h-auto w-[1536px] justify-around;
+    }
+    .title-job-doctors{
+        @apply absolute top-[276px] left-[86px] text-[40px] text-fuchsia-600 border-b-4 w-[1390px]
+    }
+    .box-photo-doctors{
+        @apply flex w-[630px] border rounded-2xl mt-[65px] mb-[60px] bg-violet-300
+    }
+    .photoevery-doctors{
+        @apply w-[400px] h-[300px] rounded-2xl;
+    }
+    .card-every_doctors{
+        @apply w-[230px];
+    }
+    .about_doctors{
+        @apply leading-9 pl-[16px] mt-[21px] ml-[3px] mr-[3px] bg-fuchsia-200 rounded-2xl;
+    }
+    .sec_name,.fir_name,.last_name,.expirience_number{
+        @apply text-fuchsia-600;
+    }
+    .job_title{
+        @apply text-fuchsia-600 text-center pt-2 ml-[3px] mr-[3px] mt-[3px] bg-fuchsia-200 rounded-2xl pb-[6px];
+    }
+    .button_write{
+        @apply mt-[36px] ml-[23px];
+    }
+    .link_write{
+        @apply bg-[#f8bbd0] p-3 rounded-2xl border-2 border-fuchsia-400 hover:bg-violet-200 transition-all;
+    }
+    ._link{
+        @apply absolute top-[3800px];
+    }
+    .form-box{
+        @apply absolute top-[3800px] left-[530px] h-auto w-[506px];
+    }
+    .boxposition{
+        @apply relative border-2 top-[-35px] h-[420px] p-[30px] bg-slate-100;
+    }
+    .input-name{
+        @apply absolute border-2 right-[21%] left-[10%] w-[400px] h-[30px] p-[15px];
+    }
+    .input-number{
+        @apply absolute border-2 right-[21%] left-[10%] top-[112px] w-[400px] h-[30px] p-[15px];
+    }
+    .select-box{
+        @apply absolute border-2 right-[21%] left-[10%] top-[190px] w-[400px] h-[30px] pl-[10px];
+    }
+    .calendar-box{
+        @apply absolute border-2 right-[35%] left-[35%] top-[260px];
+    }
+    .button_submit{
+        @apply absolute border-2 right-[21%] left-[10%] top-[360px] w-[400px] h-[30px] pl-[10px] bg-slate-200 hover:transition-all hover:bg-slate-300;
+    }
+}
+.container-doctors{
+    grid-template-columns:repeat(2, 600px);
+}

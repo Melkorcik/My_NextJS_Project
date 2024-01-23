@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .transparent-container-window{
+        @apply h-[400px];
+    }
+    .transparent-advertising{
+        @apply block h-[400px] w-auto bg-sky-800 opacity-[0.7];
+    }
+    .transparent-description{
+        @apply absolute left-[280px] top-[3060px] w-[900px] h-[100px] text-center;
+    }
+    .transparent-title{
+        @apply text-slate-100 text-[27px];
+    }
+    .transparent-paragraph{
+        @apply m-[31px] text-slate-100;
+    }
+    .transparent-button{
+        @apply text-[19px] m-[11px] h-[60px] w-[200px] bg-red-600;
+    }
+}

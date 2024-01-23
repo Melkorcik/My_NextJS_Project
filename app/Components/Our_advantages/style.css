@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .title-advantages{
+        @apply text-[40px] text-fuchsia-600 ml-40 w-[1200px] border-b-4;
+    }
+    .container-advantages{
+        @apply absolute top-[2100px] w-[1519px] h-[600px];
+    }
+    .box-advantages{
+        @apply flex flex-wrap mt-[66px] ml-[96px];
+    }
+    .image-advantages{
+        @apply w-[166px] h-[166px];
+    }
+    .title-image-advantages, .description-advantages{
+        @apply text-fuchsia-600 w-[260px];
+    }
+    .box-view_{
+        @apply flex;
+    }
+}

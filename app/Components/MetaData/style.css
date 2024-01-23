@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .container {
+        @apply flex absolute top-28;
+    }
+    .Logo{
+        @apply absolute left-[130px] h-[130px] w-[130px];
+    }
+    .content-box{
+        @apply flex w-[204px];
+    }
+    .images-box{
+        @apply flex w-[900px];
+    }
+    .email,.phone,.clock,.marker{
+       @apply absolute top-[-12px] w-[60px] h-[60px];
+    }
+    .email{
+        @apply left-[370px];
+    }
+    .phone{
+        @apply left-[630px];
+    }
+    .clock{
+        @apply left-[890px];
+    }
+    .marker{
+        @apply left-[1150px];
+    }
+    .box-meta{
+        @apply flex ml-[390px] mt-[-6px];
+    }
+    .box-meta-element{
+        @apply ml-[60px];
+    }
+    .title{
+        @apply text-fuchsia-600;
+    }
+    .info{
+        @apply text-fuchsia-600 w-[200px] text-[11px];
+    }
+}
