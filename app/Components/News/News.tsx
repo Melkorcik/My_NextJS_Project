@@ -51,6 +51,13 @@ function News(){
             },1)
         })
     }  
+
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+          window.localStorage.clear();
+        }
+    }, []);
+
     return<div className="container-news">
         <h1 className="title-news"><strong>СВЕЖИЕ НОВОСТИ</strong></h1>
         <div className="line-news" style={{marginLeft:'-36px'}}>
@@ -84,5 +91,4 @@ function News(){
         </div>
     </div>
 }
-localStorage.clear();
 export default News;
