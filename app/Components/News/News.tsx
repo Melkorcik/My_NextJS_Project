@@ -9,13 +9,11 @@ function News(){
     
     var time:any;
     const rememberLength = useMemo(()=>{
-        let val = len;
-        localStorage.setItem('length: ', String(val));
+        localStorage.setItem('length: ', String(len));
     },[len])
 
     const turn_back = useMemo(()=>{
-        let val = back;
-        localStorage.setItem('back: ', val);
+        localStorage.setItem('back: ', back);
     },[back])
 
     function handleMouseLeave(){
@@ -29,15 +27,15 @@ function News(){
     }
 
     function handleMouseEnter(){
-        new Promise((resolve, reject) => {
+        new Promise<void>((resolve, reject) => {
             return (
                 setTimeout(()=>{
-                resolve('');
+                resolve();
                 },300)
             )  
             
         })
-        .then(str => {            
+        .then(() => {            
             time = setInterval(()=>{
                 if(Number(localStorage.getItem('length: ')) < 336 && !String(localStorage.getItem('back: ')).includes('true')){
                     setLen(prev => prev + 13);
@@ -58,7 +56,7 @@ function News(){
         }
     }, []);
 
-    return<div className="container-news">
+    return<section className="container-news">
         <h1 className="title-news"><strong>СВЕЖИЕ НОВОСТИ</strong></h1>
         <div className="line-news" style={{marginLeft:'-36px'}}>
             {
@@ -89,6 +87,6 @@ function News(){
             }
             
         </div>
-    </div>
+    </section>
 }
 export default News;

@@ -3,7 +3,7 @@ import ListServices from "./List_services";
 import Procedures from "./List_procedures";
 
 function Services(){
-    return<div className="container-servies">
+    return<section className="container-servies">
         <h1 className="title-name-servies"><strong>УСЛУГИ</strong></h1>
         <div className="box-image-servies">
             {
@@ -17,6 +17,6 @@ function Services(){
                 })
             }
         </div>
-    </div>
+    </section>
 }
 export default Services;

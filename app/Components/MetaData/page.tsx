@@ -8,7 +8,7 @@ async function FetchReq(){
 async function MetaData(){
     const data = await FetchReq();
 
-    return <main className="container">
+    return <section className="container">
         <Image src='/free-icon-globe-11500693.png' width={100} height={100} alt="Logo" className="Logo"/>
         <div className="content-box">
             <div className="images-box">
@@ -30,6 +30,6 @@ async function MetaData(){
                 }
             </div>            
         </div>
-    </main>
+    </section>
 }
 export default MetaData;

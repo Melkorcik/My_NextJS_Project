@@ -8,7 +8,7 @@ async function FetchRequests(){
 async function Doctors(){
     const req = await FetchRequests();
 
-    return<div>
+    return<section>
         <h1 className="title-job-doctors"><strong>НАШИ СПЕЦИАЛИСТЫ</strong></h1>
             <div className="container-doctors">
             {    
@@ -37,6 +37,6 @@ async function Doctors(){
             </div>
                 <p className="_link" id="top"></p>  
                 <Form/>         
-        </div>
+        </section>
 }
 export default Doctors;

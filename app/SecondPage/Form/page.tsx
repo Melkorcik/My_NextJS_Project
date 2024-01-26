@@ -2,7 +2,7 @@ import '../Employees/style.css';
 
 function Form(){
     return(
-        <div className="form-box">
+        <form className="form-box">
                 <div className="boxposition">
                     <input type="text" placeholder='Имя' className="input-name"/>
                     <input type="number" placeholder='Номер телефона' className="input-number"/>
@@ -28,7 +28,7 @@ function Form(){
                     <input type="date" className="calendar-box"/>
                     <button className="button_submit">Отправить</button>
                 </div>
-            </div>
+            </form>
     )
 }
 export default Form;

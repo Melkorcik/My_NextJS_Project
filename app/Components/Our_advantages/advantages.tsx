@@ -4,7 +4,7 @@ import ListAdvantages_Title from './List_titles';
 import List_description from './List_decription';
 
 function Advantages(){
-    return<div className="container-advantages">
+    return<section className="container-advantages">
         <h1 className="title-advantages"><strong>Наши преимущества</strong></h1>
         <div className="box-advantages">
             {
@@ -23,6 +23,6 @@ function Advantages(){
                 })
             }
         </div>
-    </div>
+    </section>
 }
 export default Advantages;
