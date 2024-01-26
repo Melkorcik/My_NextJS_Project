@@ -13,7 +13,6 @@ async function FetchRequest(){
 }
 
 export default async function Home() {
-
   const response:any = await FetchRequest();
   return (
     <>

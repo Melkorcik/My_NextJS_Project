@@ -25,21 +25,21 @@ function Slider(){
         })
     },[])
     
-    return <div className="container-slider" style={{overflow:'hidden'}}>
-        <motion.img 
-            animate={{x:[1000, 0],opacity:[0, 1]}}
-            transition={{duration:2, repeat:Infinity, repeatDelay:7}}
-            src={urls[index]} 
-            className="image-slider"
-        />
-        <motion.h2 
-            animate={{x:[1000, 0],opacity:[0, 1]}}
-            transition={{duration:2, repeat:Infinity, repeatDelay:7}}
-            className="title-advertising"
-        >
-            <strong>{Advertising[index]}</strong>
-        </motion.h2>
-    </div>
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+          window.localStorage.clear();
+        }
+    }, []);
+
+    return <motion.div 
+                animate={{x:[1000, 0],opacity:[0, 1]}}
+                transition={{duration:2, repeat:Infinity, repeatDelay:7}}
+                className="container-slider" style={{overflow:'hidden'}}
+            >
+
+        <img src={urls[index]}  className="image-slider"/>
+        <h2 className="title-advertising"><strong>{Advertising[index]}</strong></h2>
+
+    </motion.div>
 }
 export default Slider;
-localStorage.clear();
