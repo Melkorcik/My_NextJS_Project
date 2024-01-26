@@ -21,9 +21,7 @@ function News(){
     }
 
     function handleMouseEnterClass(e:any){
-        String(e.target.className) !== ''
-        ? localStorage.setItem('classValue: ', String(String(e.target.className).slice(5,6)))
-        : false;
+        if(String(e.target.className) !== '')localStorage.setItem('classValue: ', String(String(e.target.className).slice(5,6)));
     }
 
     function handleMouseEnter(){
@@ -61,8 +59,8 @@ function News(){
         <div className="line-news" style={{marginLeft:'-36px'}}>
             {
                  data.map((el, index) => {
-                    var img_cls = String("imgs-"+index), main_cls = String("mais-"+index);
-                    var classValueImg = Number(String(localStorage.getItem('classValue: ')));
+                    var img_cls = String("imgs-"+index), main_cls = String("mais-"+index),
+                        classValueImg = Number(String(localStorage.getItem('classValue: ')));
                     return(
                         <div 
                             key={index} 

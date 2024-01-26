@@ -7,6 +7,7 @@ import Advertising from './List_Advertising';
 
 localStorage.setItem('index', String(0));
 localStorage.setItem('counter', String(1));
+
 function Slider(){
     const[index, setIndex] = useState(Number(localStorage.getItem('index')));
 
