@@ -1,6 +1,6 @@
 'use client'
 import './style.css';
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useCallback } from 'react';
 import data from './Data';
 
 function News(){
@@ -16,15 +16,15 @@ function News(){
         localStorage.setItem('back: ', back);
     },[back])
 
-    function handleMouseLeave(){
+    const handleMouseLeave = useCallback(() => {
         set_back('true');               
-    }
+    }, [set_back])
 
     function handleMouseEnterClass(e:any){
         if(String(e.target.className) !== '')localStorage.setItem('classValue: ', String(String(e.target.className).slice(5,6)));
     }
 
-    function handleMouseEnter(){
+    const handleMouseEnter = useCallback(() => {
         new Promise<void>((resolve, reject) => {
             return (
                 setTimeout(()=>{
@@ -45,8 +45,8 @@ function News(){
                     }                  
                 }
             },1)
-        })
-    }  
+        }).catch(err => console.error('Ошибка в Promise ', err));
+    }, [setLen, set_back])  
 
     useEffect(() => {
         if (typeof window !== 'undefined') {
