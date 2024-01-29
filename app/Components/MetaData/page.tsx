@@ -7,7 +7,11 @@ async function FetchReq(){
        res = await fetch('http://localhost:3019/FirstData')
                    .then(resp => resp.json())
     } catch (error) {
+<<<<<<< HEAD
         console.error('Ошибка при получении данных из сервера', error);
+=======
+        console.log('Ошибка при получении данных из сервера', error);
+>>>>>>> 77f9b4a109ea6da83af7bd6e432687763def1d34
     }
     return res;
 }
