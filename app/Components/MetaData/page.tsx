@@ -2,7 +2,14 @@ import Image from "next/image";
 import './style.css';
 
 async function FetchReq(){
-    return await fetch('http://localhost:3019/FirstData').then(resp => resp.json());
+    var res:any;
+    try {
+       res = await fetch('http://localhost:3019/FirstData')
+                   .then(resp => resp.json())
+    } catch (error) {
+        console.error('Ошибка при получении данных из сервера', error);
+    }
+    return res;
 }
 
 async function MetaData(){
