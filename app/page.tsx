@@ -10,8 +10,8 @@ import Transparent_Window from "./Components/TransparentWindow/TransparentWindow
 
 async function FetchRequest(){
   return await fetch('http://localhost:3019/FirstData')
-  .then(response => response.json()
-  .catch(err => console.error('Ошибка при получении данных с сервера ', err)));
+  .then(response => response.json())
+  .catch(err => console.error('Ошибка при получении данных из сервера', err));
 }
 
 export default async function Home() {

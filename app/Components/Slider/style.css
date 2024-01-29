@@ -7,7 +7,7 @@
         @apply absolute top-[250px] left-[266px];
     }
     .image-slider{
-        @apply h-[600px] w-[1000px];
+        @apply h-[600px] w-[1000px] rounded-[12px];
     }
     .title-advertising{
         @apply text-fuchsia-600 text-center text-[30px] mt-3;
