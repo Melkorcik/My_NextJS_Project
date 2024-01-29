@@ -1,12 +1,12 @@
 import Header from "./Components/Header/Header";
 import MetaData from "./Components/MetaData/page";
 import Slider from "./Components/Slider/Slider";
-import Services from "./Components/Services/Services";
-import Advantages from "./Components/Our_advantages/advantages";
+import Services from "./Components/Services/page";
+import Advantages from "./Components/Our_advantages/page";
 import News from "./Components/News/News";
-import ContactInf from "./Components/ContactInformation/ContactInf";
-import Footer from "./Components/Footer/Footer";
-import Transparent_Window from "./Components/TransparentWindow/TransparentWindow";
+import ContactInf from "./Components/ContactInformation/page";
+import Footer from "./Components/Footer/page";
+import Transparent_Window from "./Components/TransparentWindow/page";
 
 async function FetchRequest(){
   return await fetch('http://localhost:3019/FirstData')

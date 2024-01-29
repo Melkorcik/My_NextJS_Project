@@ -1,7 +1,7 @@
 import Header from "../Components/Header/Header";
 import MetaData from "../Components/MetaData/page";
-import Doctors from "./Employees/Doctors";
-import Footer from "../Components/Footer/Footer";
+import Doctors from "./Employees/page";
+import Footer from "../Components/Footer/page";
 
 function SecondPage(){
     return<div>
