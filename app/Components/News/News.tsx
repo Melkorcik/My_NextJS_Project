@@ -16,9 +16,9 @@ function News(){
         localStorage.setItem('back: ', back);
     },[back])
 
-    const handleMouseLeave = useCallback(() => {
+    const handleMouseLeave = () => {
         set_back('true');               
-    }, [set_back])
+    };
 
     function handleMouseEnterClass(e:any){
         if(String(e.target.className) !== '')localStorage.setItem('classValue: ', String(String(e.target.className).slice(5,6)));
