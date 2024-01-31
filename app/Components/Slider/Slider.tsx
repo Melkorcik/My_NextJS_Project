@@ -38,7 +38,7 @@ function Slider(){
                 className="container-slider" style={{overflow:'hidden'}}
             >
 
-        <img src={urls[index]}  className="image-slider"/>
+        <img src={urls[index]} className="image-slider"/>
         <h2 className="title-advertising"><strong>{Advertising[index]}</strong></h2>
 
     </motion.div>

@@ -1,4 +1,5 @@
 import'./TranspStyle.css';
+
 export default async function Transparent_Window({response}:any){
     return(
         <div>
